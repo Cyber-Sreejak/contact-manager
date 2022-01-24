@@ -1,0 +1,9 @@
+.contact-list {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}

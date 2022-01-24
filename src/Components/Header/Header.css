@@ -1,0 +1,34 @@
+.header {
+  background-color: #303030;
+  padding: 10px 0;
+}
+.header-logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.profile-image {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background-color: aquamarine;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logout-btn {
+  color: white;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  color: yellow;
+}
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+}
+.profile-link:hover {
+  color: yellow;
+}

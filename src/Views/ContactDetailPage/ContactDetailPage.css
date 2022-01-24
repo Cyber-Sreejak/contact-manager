@@ -1,0 +1,9 @@
+.contact-update-form {
+  max-width: 500px;
+  flex-grow: 1;
+}
+.detail-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
