@@ -11,12 +11,12 @@ const CreateContact = () => {
 
   const [name, setName] = useState<any>("");
   const [email, setEmail] = useState<any>("");
-  const [phone, setPhone] = useState<any>();
-  const [uploadPhoto, setUploadPhoto] = useState<any>("");
+  const [phone, setPhone] = useState<any>(0);
+  // const [uploadPhoto, setUploadPhoto] = useState<any>("");
 
-  const handleUploadPhoto = (e: any) => {
-    setUploadPhoto(e.target.files[0]);
-  };
+  // const handleUploadPhoto = (e: any) => {
+  //   setUploadPhoto(e.target.files[0]);
+  // };
 
   const nameChangeHandler = (e: any) => {
     setName(e.target.value);
@@ -33,7 +33,7 @@ const CreateContact = () => {
     email: email,
     phone: phone,
     contactId: id,
-    imageUrl: uploadPhoto,
+    // imageUrl: uploadPhoto,
   };
 
   const handleContactCreate = async (e: any) => {
@@ -46,7 +46,7 @@ const CreateContact = () => {
       navigate("/");
       window.location.reload();
     }
-    console.log(uploadPhoto);
+    // console.log(uploadPhoto);
   };
 
   return (
@@ -66,10 +66,10 @@ const CreateContact = () => {
             <Label>Email</Label>
             <Input type="email" onChange={emailChangeHandler} value={email} />
           </div>
-          <div className="mb-2">
+          {/* <div className="mb-2">
             <Label>Upload Photo</Label>
             <Input type="file" onChange={handleUploadPhoto} />
-          </div>
+          </div> */}
           <div className="my-4">
             <Button block color="primary" onClick={handleContactCreate}>
               Create Contact

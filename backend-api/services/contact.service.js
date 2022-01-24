@@ -9,7 +9,7 @@ exports.contactPostService = async (req, res, next) => {
       email: req.body.email,
       phone: req.body.phone,
       contactId: req.body.contactId,
-      imageUrl: Date.now() + "-" + req.file.originalname,
+      // imageUrl: Date.now() + "-" + req.file.originalname,
     });
 
     const response = await contact.save();

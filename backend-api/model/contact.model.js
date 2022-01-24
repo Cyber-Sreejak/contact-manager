@@ -5,7 +5,7 @@ const contactPostModel = mongoose.Schema({
   fullName: String,
   phone: Number,
   contactId: String,
-  imageUrl: String,
+  // imageUrl: String,
 });
 
 contactPostModel.set("timestamps", true);
